@@ -176,6 +176,7 @@ p {
 
 .card-back {
   background-color: black;
+  vertical-align: middle;
   transform: rotateY(180deg);
 }
 
