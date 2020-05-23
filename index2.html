@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disco</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="disco.mp4" type="video/mp4" />
+      </video>
+    <div class="content">
+        <h1 id="head" class="glow landing-text">Disco Mixes</h1>
+        <p>A collection of our favourite disco mixes...</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+
+      <div class="container">
+        <div class="item1">
+            <h1>About</h1>
+            <p class="about">We started to share the best disco mixes we have found from around the world. 
+                Please check out our feature mixes below and fee free to send in your suggestions.
+            </p>
+        </div>
+        <!-- Cards below with image/dj name/text -->
+        <div class="card-deck">
+          
+          <div class="card">
+              <div class="card-inner">
+                    <div class="card-front">
+                    <img src="rahaan.jpg" id="img-front"class="card-img" alt="rahaan" />
+                    
+                        <h3 class="card-title">DJ Rahaan</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                            ipsum nulla, necessitatibus, et voluptates voluptate cum
+                            nesciunt placeat corrupti sint error unde consequatur, fugit eum
+                            molestiae ratione sequi velit. Ullam?
+                        </p>
+                        <a href="#" class="button">Listen</a>
+                    </div>
+                    <div class="card-back">
+                        <img src="rahaan.jpg" alt="" id="img-back"class="card-img">
+                    </div>
+                </div>
+            </div>
+
+          <div class="card">
+            <img src="folamour.jpg" class="card-img" alt="rahaan" />
+            <div class="card-body">
+              <h3 class="card-title">Folamour</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                ipsum nulla, necessitatibus, et voluptates voluptate cum
+                nesciunt placeat corrupti sint error unde consequatur, fugit eum
+                molestiae ratione sequi velit. Ullam?
+              </p>
+              <a href="#" class="button">Listen</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="motor.jpg" class="card-img" alt="rahaan" />
+            <div class="card-body">
+              <h3 class="card-title">MCDE</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                ipsum nulla, necessitatibus, et voluptates voluptate cum
+                nesciunt placeat corrupti sint error unde consequatur, fugit eum
+                molestiae ratione sequi velit. Ullam?
+              </p>
+              <a href="#" class="button">Listen</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="move-d.jpg" class="card-img" alt="rahaan" />
+            <div class="card-body">
+              <h3 class="card-title">Move D</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                ipsum nulla, necessitatibus, et voluptates voluptate cum
+                nesciunt placeat corrupti sint error unde consequatur, fugit eum
+                molestiae ratione sequi velit. Ullam?
+              </p>
+              <a href="#" class="button">Listen</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+      </div>
+    </video>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
