@@ -19,6 +19,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  z-index: -2;
 }
 
 .content {
@@ -29,6 +30,7 @@ body {
   color: #f1f1f1;
   width: 100%;
   padding-left: 50px;
+  z-index: -1;
 }
 
 #myBtn {
@@ -48,7 +50,7 @@ body {
 }
 
 #head {
-  font-size: 7vh;
+  font-size: 6vh;
   font-family: 'Pacifico', cursive;
 }
 
@@ -60,13 +62,8 @@ p {
   font-family: 'Questrial', sans-serif;
 }
 
-.about {
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-.glow {
-  color: #fff;
+/* .glow {
+  /* color: #fff;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
@@ -81,22 +78,32 @@ p {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
       0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-}
+} */
 
 .container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
   background-color: black;
+  z-index: 1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: '. .';
+}
+
+.about-img {
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 40px;
 }
 
 .item1 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  padding: 3vmax 2vmax 3vmax 2vmax;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
   background-color: black;
   color: white;
-  text-align: center;
-  z-index: 1;
 }
 
 /* card css */
@@ -107,9 +114,10 @@ p {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-template-columns: auto auto auto auto;
-  padding: 10px 10px 10px 10px;
+  /* padding: 10px 10px 10px 10px; */
   gap: 20px;
   margin-left: 10px;
+  margin-right: 10px;
   z-index: 1;
 }
 
@@ -120,19 +128,19 @@ p {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 white;
   transition: 0.3s;
-  padding: 30px 10px 0px 10px;
+  padding: 20px 20px 10px 20px;
   text-align: center;
   height: 80%;
   transform-origin: center right;
 }
 
 .card h3 {
-  font-size: 1.8vw;
+  font-size: 3vmax;
   font-family: 'Pacifico', cursive;
 }
 
 .card-text {
-  font-size: 1.2vw;
+  font-size: 2vmax;
   font-family: 'Questrial', sans-serif;
 }
 
